@@ -1,0 +1,48 @@
+--- NuSMV-2.5.3/nusmv/src/compile/compileWrite.c.org	2011-06-15 23:14:16.000000000 +0900
++++ NuSMV-2.5.3/nusmv/src/compile/compileWrite.c	2011-10-09 08:10:24.000000000 +0900
+@@ -52,6 +52,9 @@
+ #include "utils/assoc.h"
+ #include "utils/ustring.h"
+ 
++#ifndef bool
++#include <stdbool.h>
++#endif
+ 
+ /*---------------------------------------------------------------------------*/
+ static char rcsid[] UTIL_UNUSED = "$Id: compileWrite.c,v 1.1.2.24.4.64 2010-01-29 15:22:32 nusmv Exp $";
+--- NuSMV-2.5.3/nusmv/src/compile/compileWriteUdg.c.org	2011-10-09 08:11:04.000000000 +0900
++++ NuSMV-2.5.3/nusmv/src/compile/compileWriteUdg.c	2011-10-09 08:11:16.000000000 +0900
+@@ -54,6 +54,9 @@
+ #include "utils/assoc.h"
+ #include "utils/ustring.h"
+ 
++#ifndef bool
++#include <stdbool.h>
++#endif
+ 
+ /*---------------------------------------------------------------------------*/
+ static char rcsid[] UTIL_UNUSED = "$Id: compileWriteUdg.c,v 1.1.2.3 2009-12-10 16:12:21 nusmv Exp $";
+--- NuSMV-2.5.3/nusmv/src/enc/bdd/BddEncBddPrintWff.c.org	2011-06-15 22:29:55.000000000 +0900
++++ NuSMV-2.5.3/nusmv/src/enc/bdd/BddEncBddPrintWff.c	2011-10-09 08:07:16.000000000 +0900
+@@ -54,6 +54,9 @@
+ 
+ static char rcsid[] UTIL_UNUSED = "$Id: BddEncBddPrintWff.c,v 1.1.2.7 2010-01-21 13:41:44 nusmv Exp $";
+ 
++#ifndef bool
++#include <stdbool.h>
++#endif
+ /*---------------------------------------------------------------------------*/
+ /* Macro declarations                                                        */
+ /*---------------------------------------------------------------------------*/
+--- NuSMV-2.5.3/nusmv/src/node/nodeWffPrint.c.org	2011-10-09 08:11:50.000000000 +0900
++++ NuSMV-2.5.3/nusmv/src/node/nodeWffPrint.c	2011-10-09 08:12:20.000000000 +0900
+@@ -52,6 +52,9 @@
+ char* strdup(const char*); /* forward declaration */
+ #endif
+ 
++#ifndef bool
++#include <stdbool.h>
++#endif
+ 
+ static char rcsid[] UTIL_UNUSED = "$Id: nodeWffPrint.c,v 1.13.2.4.4.17.6.3 2009-08-05 13:57:59 nusmv Exp $";
+ 
